@@ -1,0 +1,302 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Enterprise' Language: 'ca' Physical Memory: 16109 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/alexandrecp/Desktop/AI Semester/IA-Exercices/IA Learning
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53680
+Successfully changed project path to: C:/Users/alexandrecp/Desktop/AI Semester/IA-Exercices/IA Learning
+C:/Users/alexandrecp/Desktop/AI Semester/IA-Exercices/IA Learning
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 65.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/alexandrecp/Desktop/AI Semester/IA-Exercices/IA Learning/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     4018 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001752 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.474 seconds
+Domain Reload Profiling:
+	ReloadAssembly (474ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (345ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (78ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002376 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\alexandrecp\Desktop\AI Semester\IA-Exercices\IA Learning\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\alexandrecp\Desktop\AI Semester\IA-Exercices\IA Learning\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Domain Reload Profiling:
+	ReloadAssembly (725ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (558ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (245ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3225 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (112.6 KB). Loaded Objects now: 3685.
+Memory consumption went from 112.2 MB to 112.1 MB.
+Total: 2.799600 ms (FindLiveObjects: 0.244000 ms CreateObjectMapping: 0.094600 ms MarkObjects: 2.376400 ms  DeleteObjects: 0.083700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6339.340843 seconds.
+  path: Assets/Easy Primitive People
+  artifactKey: Guid(f662bec8f55f33d45a5d551d13169d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People using Guid(f662bec8f55f33d45a5d551d13169d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b59e2d544adb04c9ac1f36f95d8c45') in 0.010087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.049669 seconds.
+  path: Assets/Easy Primitive People/Materials
+  artifactKey: Guid(e09f7033626053543a8aa63ff387ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials using Guid(e09f7033626053543a8aa63ff387ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b18a51f3e5ea4a21c2f308afb6b2a9') in 0.006288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090673 seconds.
+  path: Assets/Easy Primitive People/Materials/Baby Blue.mat
+  artifactKey: Guid(4ac2606202e713b4ab55573f04556e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Baby Blue.mat using Guid(4ac2606202e713b4ab55573f04556e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdf5ec8f4aaee780573814e65e365dc') in 0.240015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Easy Primitive People/Materials/Light Pink.mat
+  artifactKey: Guid(ed07847b8b115ef4cb5086cf7ed63400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Light Pink.mat using Guid(ed07847b8b115ef4cb5086cf7ed63400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc89a1bf90c3c9c5876e207c30e7d462') in 0.015471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Easy Primitive People/Materials/Denim.mat
+  artifactKey: Guid(06e292c9b207d8a428c86ae9e6b5c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Denim.mat using Guid(06e292c9b207d8a428c86ae9e6b5c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ad272ccc382234c25f1832199d4b6c') in 0.013546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Easy Primitive People/Materials/Orange.mat
+  artifactKey: Guid(9a46a53c350d5a8468c83df4537ef303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Orange.mat using Guid(9a46a53c350d5a8468c83df4537ef303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d88c44ece962ed8b92ccba991916a56') in 0.013436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Easy Primitive People/Materials/Wood.mat
+  artifactKey: Guid(1c0c3bf6593d6d046aee3ca2dd3153ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Wood.mat using Guid(1c0c3bf6593d6d046aee3ca2dd3153ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd28a890d851a16f47c7d1df2994773b') in 0.093056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Easy Primitive People/Materials/CricketFielder.prefab
+  artifactKey: Guid(580cb0d5de7fae74cad3ee240378c8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/CricketFielder.prefab using Guid(580cb0d5de7fae74cad3ee240378c8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c163d538ae4fc88ebcc77a67a7c28a36') in 0.046678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Easy Primitive People/Materials/Grey.mat
+  artifactKey: Guid(e792a19f03e42884bb6c7aa2f98d1906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Grey.mat using Guid(e792a19f03e42884bb6c7aa2f98d1906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8af8017fe89e5ff084fc7e4c508aa98') in 0.013709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Easy Primitive People/Materials/Green.mat
+  artifactKey: Guid(7cd0db8b7cab9874c8d3dcd02fb6f49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Green.mat using Guid(7cd0db8b7cab9874c8d3dcd02fb6f49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780e9b769a5466772211f0f66463e024') in 0.016540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Easy Primitive People/Materials/White.mat
+  artifactKey: Guid(47f8481dd8680474aacf6ae68f330dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/White.mat using Guid(47f8481dd8680474aacf6ae68f330dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4349802c3d25e44c06d130678f13e3') in 0.013296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Easy Primitive People/Materials/Dark Pink.mat
+  artifactKey: Guid(50627c534554cca469933baa5dd9676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Materials/Dark Pink.mat using Guid(50627c534554cca469933baa5dd9676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79091a7465b8825f4e18d78f9c69de3b') in 0.013592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.007478 seconds.
+  path: Assets/Easy Primitive People/Prefab/Cloud1.prefab
+  artifactKey: Guid(5f3e0d8101b9d1b4385eb4d565973aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Cloud1.prefab using Guid(5f3e0d8101b9d1b4385eb4d565973aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ce81d1d6a123452ec89a5688a1e0ec') in 0.013149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Easy Primitive People/Prefab/Cubicle.prefab
+  artifactKey: Guid(1b134b1c5bdecf14e936ab0619fcf833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Cubicle.prefab using Guid(1b134b1c5bdecf14e936ab0619fcf833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b60caa54f462438689b9d32cd940ca') in 0.017295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Easy Primitive People/Prefab/Pilgrim.prefab
+  artifactKey: Guid(8a40fb370ea9e3c4cb0b6250bbc0d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Pilgrim.prefab using Guid(8a40fb370ea9e3c4cb0b6250bbc0d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a6592507e698870ed1a2a1b2f715a9') in 0.017422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Easy Primitive People/Prefab/Ghost.prefab
+  artifactKey: Guid(504712390eb34b946873d7f1bb40b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Ghost.prefab using Guid(504712390eb34b946873d7f1bb40b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfc2647046128b252ce92f657fdea01') in 0.016253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Easy Primitive People/Prefab/Nurse.prefab
+  artifactKey: Guid(51e437be22296b340954bf6591a60065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Nurse.prefab using Guid(51e437be22296b340954bf6591a60065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45f6ff7e6de6190317045ffa1c89b43') in 0.016174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Easy Primitive People/Prefab/Santa.prefab
+  artifactKey: Guid(34e776118e152b444ba6649c44b8b1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Santa.prefab using Guid(34e776118e152b444ba6649c44b8b1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e6c44db525c79a5ad9cca742c3efe9') in 0.018575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Easy Primitive People/Prefab/Pig.prefab
+  artifactKey: Guid(cc3c57fe9cc9c9e44bc43f7893d1708e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Pig.prefab using Guid(cc3c57fe9cc9c9e44bc43f7893d1708e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ee7d68adefe509bca35ed0861342e9') in 0.017579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Easy Primitive People/Prefab/Cop.prefab
+  artifactKey: Guid(35d11d1e1dd397942b5024ee78060e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Cop.prefab using Guid(35d11d1e1dd397942b5024ee78060e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585c5a22d2e35f0bc9df8fbec745b07d') in 0.018607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Easy Primitive People/Prefab/CricketFielder.prefab
+  artifactKey: Guid(61860cf461366a4419cc4352d574d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/CricketFielder.prefab using Guid(61860cf461366a4419cc4352d574d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8820ad31ee78492806b43e91e7392b9e') in 0.020111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Easy Primitive People/Prefab/Pumpkin.prefab
+  artifactKey: Guid(2ac08407a791dcf4f9f7dab45c4de857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Pumpkin.prefab using Guid(2ac08407a791dcf4f9f7dab45c4de857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c3f670cab6192ed3d7305e1e456fb7') in 0.015130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Easy Primitive People/Prefab/Main Camera.prefab
+  artifactKey: Guid(e6efa26bdc07cf945952ac3f77fc7eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Easy Primitive People/Prefab/Main Camera.prefab using Guid(e6efa26bdc07cf945952ac3f77fc7eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62f852869af4c67721c24f2f0f77bce') in 0.008389 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
