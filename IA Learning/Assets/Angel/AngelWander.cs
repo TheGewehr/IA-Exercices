@@ -28,11 +28,11 @@ public class AngelWander : MonoBehaviour
     [SerializeField]
     float turnSpeed;
 
-    [SerializeField]
-    float radius;
-
-    [SerializeField]
-    float offset;
+    //[SerializeField]
+    //float radius;
+    //
+    //[SerializeField]
+    //float offset;
 
     //[SerializeField]
     bool NewWanderPoint;
