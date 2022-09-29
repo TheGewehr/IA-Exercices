@@ -7,6 +7,7 @@ public class ThiefAI : MonoBehaviour
 {
     [SerializeField]
     NavMeshAgent agent;
+
     enum States
     {
         Seek = 0,
@@ -45,12 +46,14 @@ public class ThiefAI : MonoBehaviour
 
     void FleeTarget(GameObject point)
     {
-        agent.destination = -point.transform.position;
+       // Vector3 fleeVector = point - transform.position;
+       // agent.destination = transform.position- fleeVector;
     }
 
     void FleePoint(Vector3 point)
     {
-        agent.destination = -point;
+        Vector3 fleeVector = point - transform.position;
+        agent.destination = transform.position - fleeVector;
     }
 
     void Wander()
@@ -59,6 +62,35 @@ public class ThiefAI : MonoBehaviour
         SeekPoint(RandomPoint(transform.position, 100));
 
         NewWanderPoint = false;
+    }
+
+    void Wander2()
+    {
+        float radius = Random.Range(8f, 10f);
+        float offset = Random.Range(8f, 10f);
+
+        Vector3 localTarget = Random.insideUnitCircle * radius;
+        localTarget += new Vector3(0, 0, offset);
+
+        Vector3 worldTarget = transform.TransformPoint(localTarget);
+        worldTarget.y = 0f;
+
+        // agent.destination = worldTarget;
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(worldTarget, out hit, radius, NavMesh.AllAreas))
+        {
+            agent.destination = hit.position;
+        }
+        else
+        {
+            worldTarget = transform.TransformPoint(-localTarget);
+
+            if (NavMesh.SamplePosition(worldTarget, out hit, radius, NavMesh.AllAreas))
+            {
+                agent.destination = hit.position;
+            }
+        }
     }
 
     void Pursue()
@@ -102,14 +134,15 @@ public class ThiefAI : MonoBehaviour
                 break;
             case States.Flee:
                 {
-                    FleeTarget(target);
+                   // FleeTarget(target);
+                    FleePoint(target.position);
                 }
                 break;
             case States.Wander:
                 {
                     if (NewWanderPoint == true)
                     {
-                        Wander();
+                        Wander2();
                     }
                 }
                 break;

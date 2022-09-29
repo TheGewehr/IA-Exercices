@@ -56,6 +56,35 @@ public class AngelWander : MonoBehaviour
         NewWanderPoint = false;
     }
 
+    void wandah()
+    {
+        float radius = Random.Range(8f,10f);
+        float offset = Random.Range(8f, 10f);
+
+        Vector3 localTarget = Random.insideUnitCircle * radius;
+        localTarget += new Vector3(0, 0, offset);
+
+        Vector3 worldTarget = transform.TransformPoint(localTarget);
+        worldTarget.y = 0f;
+
+       // agent.destination = worldTarget;
+
+        NavMeshHit hit;
+        if(NavMesh.SamplePosition(worldTarget,out hit, radius, NavMesh.AllAreas))
+        {
+            agent.destination = hit.position;
+        }
+        else
+        {
+            worldTarget = transform.TransformPoint(-localTarget);
+            
+            if(NavMesh.SamplePosition(worldTarget, out hit, radius, NavMesh.AllAreas))
+            {
+                agent.destination = hit.position;
+            }
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,7 +117,7 @@ public class AngelWander : MonoBehaviour
                 {
                     if(NewWanderPoint == true)
                     {
-                        Wander();                        
+                        wandah();                        
                     }                   
                 }
                 break;

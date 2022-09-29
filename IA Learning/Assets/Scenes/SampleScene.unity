@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1965129812}
   IASatate: 1
-  target: {fileID: 417111716}
+  target: {fileID: 2085409307}
   maxVelocity: 5
   minDistance: 2
   turnSpeed: 0.01
