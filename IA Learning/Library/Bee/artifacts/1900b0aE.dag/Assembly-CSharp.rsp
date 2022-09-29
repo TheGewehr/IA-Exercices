@@ -350,6 +350,7 @@
 "Assets/Camera movement/CameraMovement.cs"
 "Assets/Cop AI/CopAI.cs"
 "Assets/Devil AI/DevilIASteering.cs"
+"Assets/Flocking AI/Flock Manager.cs"
 "Assets/Pig AI/PigAIKinematic.cs"
 "Assets/Thief AI/ThiefAI.cs"
 -langversion:9.0

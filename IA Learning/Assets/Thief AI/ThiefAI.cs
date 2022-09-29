@@ -124,7 +124,7 @@ public class ThiefAI : MonoBehaviour
         Vector3 movement = Vector3.zero;
         float angle = 0;
         distance = Vector3.Distance(agent.destination, transform.position);
-
+        
         switch (IASatate)
         {
             case States.Seek:
@@ -135,7 +135,7 @@ public class ThiefAI : MonoBehaviour
             case States.Flee:
                 {
                    // FleeTarget(target);
-                    FleePoint(target.position);
+                    FleePoint(target.transform.position);
                 }
                 break;
             case States.Wander:
