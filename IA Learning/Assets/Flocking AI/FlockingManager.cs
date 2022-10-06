@@ -11,6 +11,7 @@ public class FlockingManager : MonoBehaviour
 	public int numFlockingEntities;
 
 	public GameObject[] allFlockingEntities;
+	public GameObject entitiesTarget;
 	public Vector3 limits;
 
 	[Header("Flocking Entity Settings")]

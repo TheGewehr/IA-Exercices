@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FlockEntities : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class FlockEntities : MonoBehaviour
     private float timePassed;
     private float seconds;
 
+    
+    public GameObject target;
+
     //private bool turning;
 
     void Start()
@@ -19,11 +23,12 @@ public class FlockEntities : MonoBehaviour
         seconds = 1.5f;
         timePassed = seconds;
         speed = Random.Range(myManager.minSpeed, myManager.maxSpeed);
+        target = myManager.entitiesTarget;
        // turning = false;
     }
 
     void Update()
-    {
+    { 
         if (timePassed >= seconds)
         {
             if (Random.Range(0.0f, 100.0f) < 75.0f)
@@ -42,14 +47,21 @@ public class FlockEntities : MonoBehaviour
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), myManager.rotationSpeed * Time.deltaTime);
         transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
+
+       
     }
 
-    void FlockingRules()
+    void FlockingRules() // posicion del leader - posicion del flocking guy, que el lider se espere
     {
         Debug.Log("Rules created");
         Vector3 cohesion = Vector3.zero;
         Vector3 align = Vector3.zero;
         Vector3 separation = Vector3.zero;
+        Vector3 leader = Vector3.zero;
+        Vector3 randomVector = Vector3.zero;
+        //randomVector.x = Random.Range(-0.5f, 0.5f);
+        //randomVector.y = Random.Range(-0.5f, 0.5f);
+        //randomVector.z = Random.Range(-0.5f, 0.5f);
         int num = 0;
 
         foreach (GameObject go in myManager.allFlockingEntities)
@@ -67,7 +79,10 @@ public class FlockEntities : MonoBehaviour
                     num++;
 
                     // Separation
-                    separation -= (transform.position - go.transform.position) / (distance * distance);
+                    separation -= (transform.position - go.transform.position) / (distance * 0.1f );
+
+                    // Follow the leader
+                    leader = target.transform.position - transform.position;
                 }
             }
         }
@@ -82,7 +97,13 @@ public class FlockEntities : MonoBehaviour
             speed = Mathf.Clamp(align.magnitude, myManager.minSpeed, myManager.maxSpeed);
         }
 
+        //Debug.Log("" + leader);
         // Final computation
-        direction = (cohesion + align + separation).normalized * speed;
+        direction = ((cohesion + align + separation /*+ leader*/).normalized + leader.normalized+ randomVector) * speed;
+
+       //Debug.DrawRay(transform.position, direction, Color.white);
+       //Debug.DrawRay(transform.position, cohesion, Color.red);
+       //Debug.DrawRay(transform.position, align, Color.green);
+       //Debug.DrawRay(transform.position, separation, Color.blue);
     }
 }

@@ -118,7 +118,7 @@ public class ThiefAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IASatate = States.Flee; // for test purposes
+        //IASatate = States.Flee; // for test purposes
 
         //Vector3 direction = Vector3.zero;
         Vector3 movement = Vector3.zero;
