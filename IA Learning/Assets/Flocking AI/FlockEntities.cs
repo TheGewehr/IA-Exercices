@@ -108,15 +108,18 @@ public class FlockEntities : MonoBehaviour
         //Debug.Log("" + leader);
         // Final computation
         Vector3 positionCorrection = Vector3.zero;
+        positionCorrection = target.transform.position - transform.position;
 
-        //if((target.transform.position.x - transform.position))
-        //{
-        //
-        //}
-        //else
-        //{
+        float instanceDistance = Vector3.Distance(target.transform.position, transform.position);
+
+        if (instanceDistance > 15.0f)
+        {
+            direction = (positionCorrection + randomVector).normalized * speed;
+        }
+        else
+        {
             direction = ((cohesion + align + separation /*+ leader*/).normalized + (leader.normalized * 4) + randomVector) * speed;
-        //}
+        }
         
 
        //Debug.DrawRay(transform.position, direction, Color.white);
