@@ -2424,6 +2424,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2085409307}
+    - target: {fileID: 182571096355653409, guid: e11e024ed6dbf3043ba8ce266174a149, type: 3}
+      propertyPath: maxVelocity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 182571096355653422, guid: e11e024ed6dbf3043ba8ce266174a149, type: 3}
       propertyPath: m_RootOrder
       value: 11

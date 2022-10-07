@@ -84,8 +84,13 @@ public class FlockEntities : MonoBehaviour
                     separation -= (transform.position - go.transform.position) / (distance * 0.1f );
 
                     // Follow the leader
-                    leader = target.transform.position - transform.position;
+                    Vector3 position;
+                    position.x = target.transform.position.x;
+                    position.y = target.transform.position.y + 2.5f;
+                    position.z = target.transform.position.z;
 
+                    leader = position - transform.position;
+                    
                 }
             }
         }
