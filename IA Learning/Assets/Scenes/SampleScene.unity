@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35767920515e5d7468478936e4de6789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityPrefab: {fileID: 6423186357777603376, guid: 2aa139896b18c8e45b8a5ffcf870f845, type: 3}
+  entityPrefab: {fileID: 2477798917874570024, guid: 3ac531a934c167f45abc207f18140c06, type: 3}
   spawn: {fileID: 976469180}
   numFlockingEntities: 50
   allFlockingEntities: []

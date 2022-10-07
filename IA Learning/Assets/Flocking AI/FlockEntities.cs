@@ -20,7 +20,7 @@ public class FlockEntities : MonoBehaviour
 
     void Start()
     {
-        seconds = 1.5f;
+        seconds = 1.0f;
         timePassed = seconds;
         speed = Random.Range(myManager.minSpeed, myManager.maxSpeed);
         target = myManager.entitiesTarget;
