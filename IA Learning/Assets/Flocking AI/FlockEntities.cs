@@ -107,7 +107,17 @@ public class FlockEntities : MonoBehaviour
 
         //Debug.Log("" + leader);
         // Final computation
-        direction = ((cohesion + align + separation /*+ leader*/).normalized + (leader.normalized * 4) + randomVector) * speed;
+        Vector3 positionCorrection = Vector3.zero;
+
+        //if((target.transform.position.x - transform.position))
+        //{
+        //
+        //}
+        //else
+        //{
+            direction = ((cohesion + align + separation /*+ leader*/).normalized + (leader.normalized * 4) + randomVector) * speed;
+        //}
+        
 
        //Debug.DrawRay(transform.position, direction, Color.white);
        //Debug.DrawRay(transform.position, cohesion, Color.red);
