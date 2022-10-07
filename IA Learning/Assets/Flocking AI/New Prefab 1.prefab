@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9106207497536135954}
   - component: {fileID: 9106207497537176568}
   - component: {fileID: -5811172189132596206}
+  - component: {fileID: -8768603677532410363}
   m_Layer: 0
   m_Name: New Prefab 1
   m_TagString: Untagged
@@ -98,3 +99,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myManager: {fileID: 0}
   speed: 0
+  target: {fileID: 0}
+--- !u!136 &-8768603677532410363
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423186357777603376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.2154949
+  m_Height: 0.907529
+  m_Direction: 1
+  m_Center: {x: 0.00000029802328, y: 0.00000016391277, z: 0.00000008940699}

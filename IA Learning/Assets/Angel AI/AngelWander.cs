@@ -19,8 +19,8 @@ public class AngelWander : MonoBehaviour
     [SerializeField]
     GameObject target;
 
-    [SerializeField]
-    float maxVelocity;
+    
+    public float maxVelocity;
 
     [SerializeField]
     float minDistance;

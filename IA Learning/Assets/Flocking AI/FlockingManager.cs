@@ -7,6 +7,8 @@ public class FlockingManager : MonoBehaviour
 	[Header("General Settings")]
 	public GameObject entityPrefab;
 
+	public GameObject spawn;
+
 	[Range(0, 50)]
 	public int numFlockingEntities;
 
@@ -16,10 +18,10 @@ public class FlockingManager : MonoBehaviour
 
 	[Header("Flocking Entity Settings")]
 
-	[Range(0.0f, 5.0f)]
+	[Range(0.0f, 20.0f)]
 	public float minSpeed;
 
-	[Range(0.0f, 5.0f)]
+	[Range(0.0f, 20.0f)]
 	public float maxSpeed;
 
 	public float neighbourDistance;
@@ -50,9 +52,9 @@ public class FlockingManager : MonoBehaviour
 	Vector3 RandomPosition()
 	{
 		Vector3 pos;
-		pos.x = Random.Range(0, limits.x);
-		pos.y = Random.Range(0, limits.y);
-		pos.z = Random.Range(0, limits.z);
+		pos.x = Random.Range(spawn.transform.position.x - limits.x, spawn.transform.position.x + limits.x);
+		pos.y = Random.Range(spawn.transform.position.y - limits.y, spawn.transform.position.y + limits.y);
+		pos.z = Random.Range(spawn.transform.position.z - limits.z, spawn.transform.position.z + limits.z);
 		return pos;
 	}
 

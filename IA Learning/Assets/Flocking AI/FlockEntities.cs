@@ -59,11 +59,13 @@ public class FlockEntities : MonoBehaviour
         Vector3 separation = Vector3.zero;
         Vector3 leader = Vector3.zero;
         Vector3 randomVector = Vector3.zero;
-        //randomVector.x = Random.Range(-0.5f, 0.5f);
-        //randomVector.y = Random.Range(-0.5f, 0.5f);
-        //randomVector.z = Random.Range(-0.5f, 0.5f);
+        randomVector.x = Random.Range(-0.15f, 0.15f);
+        randomVector.y = Random.Range(-0.15f, 0.15f);
+        randomVector.z = Random.Range(-0.15f, 0.15f);
         int num = 0;
 
+        
+        
         foreach (GameObject go in myManager.allFlockingEntities)
         {
             if (go != this.gameObject)
@@ -83,6 +85,7 @@ public class FlockEntities : MonoBehaviour
 
                     // Follow the leader
                     leader = target.transform.position - transform.position;
+
                 }
             }
         }
@@ -99,7 +102,7 @@ public class FlockEntities : MonoBehaviour
 
         //Debug.Log("" + leader);
         // Final computation
-        direction = ((cohesion + align + separation /*+ leader*/).normalized + leader.normalized+ randomVector) * speed;
+        direction = ((cohesion + align + separation /*+ leader*/).normalized + (leader.normalized * 4) + randomVector) * speed;
 
        //Debug.DrawRay(transform.position, direction, Color.white);
        //Debug.DrawRay(transform.position, cohesion, Color.red);
